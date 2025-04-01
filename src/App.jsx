@@ -1,11 +1,16 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import CustomNavbar from "./CustomNavbar";
+import MyNavbar from "./CustomNavbar";
+import MyFooter from "./MyFooter";
 
 function App() {
   return (
     <>
-      <CustomNavbar />
+      <body className="vh-100">
+        <MyNavbar />
+
+        <MyFooter />
+      </body>
     </>
   );
 }

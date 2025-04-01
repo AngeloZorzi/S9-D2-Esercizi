@@ -2,20 +2,20 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-function CustomNavbar() {
+function MyNavbar() {
   return (
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="#home">LA MAGICA LIBRERIA</Navbar.Brand>
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Best Sellers</Nav.Link>
-            <Nav.Link href="#features">Generi</Nav.Link>
-            <Nav.Link href="#pricing">On Sale</Nav.Link>
+            <Nav.Link href="#">Home</Nav.Link>
+            <Nav.Link href="#">About</Nav.Link>
+            <Nav.Link href="#">Browse</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
     </>
   );
 }
-export default CustomNavbar;
+export default MyNavbar;
