@@ -3,7 +3,7 @@ import booksData from "./data/horror.json";
 
 const AllTheBooks = () => {
   return (
-    <Container className="scroll">
+    <Container>
       <Row className="g-4">
         {booksData.map((book) => (
           <Col key={book.asin} xs={12} sm={6} md={4} lg={3}>
