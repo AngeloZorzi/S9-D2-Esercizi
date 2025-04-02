@@ -1,22 +1,22 @@
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import MyNavbar from "./CustomNavbar";
-import MyFooter from "./MyFooter";
-import Welcome from "./Welcome";
-import AllTheBooks from "./AllTheBooks";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
+import MyNav from './components/MyNav'
+import MyFooter from './components/MyFooter'
+import Welcome from './components/Welcome'
+import AllTheBooks from './components/AllTheBooks'
+import { Container } from 'react-bootstrap'
 
 function App() {
   return (
     <>
-      <body className="vh-100 bg-dark">
-        <MyNavbar />
+      <MyNav />
+      <Container>
         <Welcome />
         <AllTheBooks />
-
-        <MyFooter />
-      </body>
+      </Container>
+      <MyFooter />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
